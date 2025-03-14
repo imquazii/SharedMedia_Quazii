@@ -11,16 +11,16 @@ SharedMedia_Quazii provides custom media elements that is used by the Quazii UI.
 ## Installation
 
 ### Manual Installation
-1. Download the latest release from [GitHub](https://github.com/imquazii/SharedMedia_Quazii/releases)
+1. Download the latest .zip [here](https://github.com/imquazii/SharedMedia_Quazii/releases)
 2. Extract the folder to your World of Warcraft `_retail_/Interface/AddOns` directory
-3. Rename the folder to `SharedMedia_Quazii` if necessary
-4. Restart World of Warcraft or reload your UI
+3. Restart World of Warcraft or reload your game
 
 ### Using WoWUp
 1. Open WoWUp
-2. Go to the "Get Addons" tab
-3. Search for "SharedMedia_Quazii"
+2. Click the 'Install From URL' button
+3. Paste in the string `https://github.com/imquazii/SharedMedia_Quazii`, Click 'Import'
 4. Click "Install"
+5. Restart World of Warcraft or reload your game
 
 ## Requirements
 
