@@ -11,7 +11,7 @@ local LSM = LibStub("LibSharedMedia-3.0")
 -- -----
 --   FONT
 -- -----
-LSM:Register("font", "Quazii", [[Interface\Addons\SharedMedia_MyMedia\font\Quazii.ttf]]) 
+LSM:Register("font", "Quazii", [[Interface\Addons\SharedMedia_Quazii\font\Quazii.ttf]]) 
 
 -- -----
 --   SOUND
@@ -21,4 +21,4 @@ LSM:Register("font", "Quazii", [[Interface\Addons\SharedMedia_MyMedia\font\Quazi
 --   TEXTURE --
 -- -----
 
-LSM:Register("statusbar", "Quazii", [[Interface\Addons\SharedMedia_MyMedia\statusbar\Quazii.tga]]) 
+LSM:Register("statusbar", "Quazii", [[Interface\Addons\SharedMedia_Quazii\statusbar\Quazii.tga]]) 
