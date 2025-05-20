@@ -15,9 +15,17 @@ jobs:
         id: vars
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
+      - name: Prepare Addon Folder
+        run: |
+          mkdir SharedMedia_Quazii
+          cp -r * .[!.]* SharedMedia_Quazii/ || true
+          rm -rf SharedMedia_Quazii/.git SharedMedia_Quazii/.github || true
+
       - name: Zip Addon
         run: |
-          zip -r SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip . -x '*.git*' -x '*.github*'
+          cd SharedMedia_Quazii
+          zip -r ../SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip .
+          cd ..
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
