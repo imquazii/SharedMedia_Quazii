@@ -23,11 +23,9 @@ jobs:
 
       - name: Zip Addon
         run: |
-          cd SharedMedia_Quazii
-          zip -r ../SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip .
-          cd ..
+          zip -r SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip SharedMedia_Quazii
 
-      - name: Upload Release Asset
+      - name: Upload Release Assetimage.png
         uses: softprops/action-gh-release@v2
         with:
           files: SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip
