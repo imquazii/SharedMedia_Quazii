@@ -1,0 +1,27 @@
+name: Package and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set version from tag
+        id: vars
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+
+      - name: Zip Addon
+        run: |
+          zip -r SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip . -x '*.git*' -x '*.github*'
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: SharedMedia_Quazii-${{ env.RELEASE_VERSION }}-release.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
