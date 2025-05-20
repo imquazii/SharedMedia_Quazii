@@ -18,8 +18,8 @@ jobs:
       - name: Prepare Addon Folder
         run: |
           mkdir SharedMedia_Quazii
-          cp -r * .[!.]* SharedMedia_Quazii/ || true
-          rm -rf SharedMedia_Quazii/.git SharedMedia_Quazii/.github || true
+          cp SharedMedia_Quazii.toc Quazii.lua SharedMedia_Quazii/
+          cp -r font sound statusbar SharedMedia_Quazii/
 
       - name: Zip Addon
         run: |
