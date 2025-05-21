@@ -4,7 +4,7 @@
 ## Interface-Wrath: 30403
 ## Title: SharedMedia_Quazii
 ## Notes: Quazii's custom media for LibSharedMedia-3.0
-## Version: 1.0.2
+## Version: 1.0.9
 ## Author: Quazii
 ## X-Category: Library
 ## X-Website: https://github.com/imquazii/SharedMedia_Quazii
