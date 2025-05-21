@@ -25,6 +25,7 @@ LSM:Register("sound", "QUI1_Buffed", [[Interface\Addons\SharedMedia_Quazii\sound
 LSM:Register("sound", "QUI1_Buster", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Buster.ogg]])
 LSM:Register("sound", "QUI1_Charge", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Charge.ogg]])
 LSM:Register("sound", "QUI1_Clear", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Clear.ogg]])
+LSM:Register("sound", "QUI1_Combo", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Combo.ogg]])
 LSM:Register("sound", "QUI1_Defensive", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Defensive.ogg]])
 LSM:Register("sound", "QUI1_Dodge", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Dodge.ogg]])
 LSM:Register("sound", "QUI1_Dot", [[Interface\Addons\SharedMedia_Quazii\sound\QUI1_Dot.ogg]])
